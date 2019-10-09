@@ -25,11 +25,11 @@ security:
 
 spring:
     datasource:
-        data: classpath:/sql/data.sql
+        #data: classpath:/sql/data.sql
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: '123456'
         platform: mysql
-        schema: classpath:/sql/schema.sql
+        #schema: classpath:/sql/schema.sql
         url: jdbc:mysql://localhost/oauth?createDatabaseIfNotExist=true&serverTimezone=UTC
         username: root
     jpa:
