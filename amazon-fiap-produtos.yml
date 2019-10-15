@@ -15,7 +15,7 @@ eureka:
 
 spring:
     datasource:
-        driver-class-name: com.mysql.jdbc.Driver
+        driver-class-name: com.mysql.cj.jdbc.Driver
         password: '2~g+T{3wLaFc'
         platform: mysql
         url: jdbc:mysql://ic3.com.br/ic3com_produtos?verifyServerCertificate=false&useSSL=false&requireSSL=false
