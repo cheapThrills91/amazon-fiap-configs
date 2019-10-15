@@ -1,0 +1,28 @@
+server:
+  port: 9094
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 9091
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: '2~g+T{3wLaFc'
+        platform: mysql
+        url: jdbc:mysql://ic3.com.br/ic3com_produtos?verifyServerCertificate=false&useSSL=false&requireSSL=false
+        username: ic3com_produtos
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
+        generate-ddl: false
+        hibernate:
+            ddl-auto: create
+        show-sql: true
