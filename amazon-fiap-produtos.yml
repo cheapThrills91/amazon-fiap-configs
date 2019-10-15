@@ -18,7 +18,7 @@ spring:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: '2~g+T{3wLaFc'
         platform: mysql
-        url: jdbc:mysql://ic3.com.br/ic3com_produtos?verifyServerCertificate=false&useSSL=false&requireSSL=false
+        url: jdbc:mysql://ic3.com.br/ic3com_produtos?verifyServerCertificate=false&useSSL=false&requireSSL=false&serverTimezone=UTC
         username: ic3com_produtos
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
