@@ -13,18 +13,18 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
 
- spring:
-     datasource:
-         driver-class-name: com.mysql.cj.jdbc.Driver
-         password: '2~g+T{3wLaFc'
-         platform: mysql
-         url: jdbc:mysql://ic3.com.br/ic3com_produtos?verifyServerCertificate=false&useSSL=false&requireSSL=false&serverTimezone=UTC
-         username: ic3com_produtos
-     jpa:
-         database-platform: org.hibernate.dialect.MySQL5Dialect
-         generate-ddl: false
-         hibernate:
-             ddl-auto: update
-             show_sql: true
-             format_sql: true
-         show-sql: true
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: '2~g+T{3wLaFc'
+        platform: mysql
+        url: jdbc:mysql://ic3.com.br/ic3com_produtos?verifyServerCertificate=false&useSSL=false&requireSSL=false&serverTimezone=UTC
+        username: ic3com_produtos
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5Dialect
+        generate-ddl: false
+        hibernate:
+            ddl-auto: update
+            show_sql: true
+            format_sql: true
+        show-sql: true
