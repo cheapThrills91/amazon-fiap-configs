@@ -21,8 +21,10 @@ spring:
         url: jdbc:mysql://ic3.com.br/ic3com_clientes?verifyServerCertificate=false&useSSL=false&requireSSL=false&serverTimezone=UTC
         username: ic3com_clientes
     jpa:
-        database-platform: org.hibernate.dialect.MySQLDialect
+        database-platform: org.hibernate.dialect.MySQL5Dialect
         generate-ddl: false
         hibernate:
-            ddl-auto: create
+            ddl-auto: update
+            show_sql: true
+            format_sql: true
         show-sql: true
